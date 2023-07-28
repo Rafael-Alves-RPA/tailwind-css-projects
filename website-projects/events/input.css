@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#hero {
+  background-image: url("../images/bg-header-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 768px) {
+  #hero {
+    background-image: url("../images/bg-header-mobile.png");
+    background-position: center;
+  }
+}
+
+.h5 {
+  @apply absolute bottom-4 w-56 px-6 duration-200 group-hover:scale-110 group-hover:text-blackP md:bottom-8 md:px-10;
+}
+
+.item-container {
+  @apply flex w-full flex-col justify-between space-y-6 text-2xl uppercase text-white md:flex-row md:space-x-8 md:space-y-0;
+}
+
+.item {
+  @apply relative overflow-hidden shadow-xl shadow-grayL;
+}
+
+.item-gradient {
+  @apply absolute bottom-0 left-0 right-0 top-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70;
+}
+
+.tag-open {
+  @apply absolute -right-2 -top-2 z-20 h-8 w-8 rounded-full bg-opacity-70 duration-300;
+}
+.tag-open-p {
+  @apply hidden p-2 pr-4 text-right text-base font-semibold italic text-white;
+}
+
+.ficon:hover {
+  filter: invert(87%) sepia(37%) saturate(400%) hue-rotate(121deg)
+    brightness(101%) contrast(94%);
+}
+
+/* Hamburger Menu */
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 3px;
+  top: 0;
+  left: 0;
+  background: #9c9aa6;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
+  position: fixed;
+  top: 50px;
+  right: 25px;
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+  background-color: #fff;
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+  background-color: #fff;
+}

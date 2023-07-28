@@ -1,0 +1,632 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="images/favicon/32x32.png" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+
+    <title>E-sport</title>
+  </head>
+  <!-- boormark hamburguer menu -->
+  <body class="overflow-x-hidden">
+    <!-- Nav -->
+    <section id="hero" class="shadow-grayL">
+      <div class="container relative mx-auto max-w-6xl px-6 py-12">
+        <nav class="">
+          <div class="flex items-center justify-between text-blackP">
+            <!-- logo -->
+            <img src="images/logo.png" class="flex w-44 sm:mx-0" alt="" />
+            <!-- Menu -->
+            <div
+              class="hidden h-10 font-alata text-xl font-semibold tracking-widest md:flex md:space-x-8"
+            >
+              <div class="group">
+                <a href="#features" class="group-hover:text-cyanP">Início</a>
+                <div
+                  class="mx-2 group-hover:border-b-2 group-hover:border-grayL"
+                ></div>
+              </div>
+              <div class="group">
+                <a href="#content" class="group-hover:text-cyanP">Destaques</a>
+                <div
+                  class="mx-2 group-hover:border-b-2 group-hover:border-grayL"
+                ></div>
+              </div>
+              <div class="group">
+                <a href="#allcomp" class="group-hover:text-cyanP"
+                  >Competições</a
+                >
+                <div
+                  class="mx-2 group-hover:border-b-2 group-hover:border-grayL"
+                ></div>
+              </div>
+              <div class="group">
+                <a href="#" class="group-hover:text-cyanP">Contato</a>
+                <div
+                  class="mx-2 group-hover:border-b-2 group-hover:border-grayL"
+                ></div>
+              </div>
+            </div>
+            <!-- @todo Hamburger Button -->
+            <button
+              id="menu-btn"
+              class="hamburger z-50 block focus:outline-none md:hidden"
+            >
+              <span class="hamburger-top"></span>
+              <span class="hamburger-middle"></span>
+              <span class="hamburger-bottom"></span>
+            </button>
+          </div>
+          <!--@todo - Mobile Menu -->
+          <div
+            id="menu"
+            class="fixed left-0 right-0 top-0 z-30 hidden h-fit flex-col items-center self-end bg-grayP bg-opacity-80 px-6 pt-24 text-center font-alata text-xl tracking-widest text-white"
+          >
+            <div class="group px-2 py-4">
+              <a href="#features" class="block w-48 group-hover:text-cyanP"
+                >Início</a
+              >
+              <div
+                class="mx-12 transform border-b pt-4 duration-500 group-hover:mx-2 group-hover:border-cyanP"
+              ></div>
+            </div>
+            <div class="group px-2 py-4">
+              <a href="#content" class="block w-48 group-hover:text-cyanP"
+                >Destaques</a
+              >
+              <div
+                class="mx-12 transform border-b pt-4 duration-500 group-hover:mx-2 group-hover:border-cyanP"
+              ></div>
+            </div>
+            <div class="group px-2 py-4">
+              <a href="#allcomp" class="block w-48 group-hover:text-cyanP"
+                >Competições</a
+              >
+              <div
+                class="mx-12 transform border-b pt-4 duration-500 group-hover:mx-2 group-hover:border-cyanP"
+              ></div>
+            </div>
+            <div class="group px-2 pb-4 pt-2">
+              <a href="#footer" class="block w-48 group-hover:text-cyanP"
+                >Contato</a
+              >
+              <div
+                class="mx-12 transform border-b pt-4 duration-500 group-hover:mx-2 group-hover:border-cyanP"
+              ></div>
+            </div>
+          </div>
+        </nav>
+        <!-- Image -->
+        <div class="flex flex-col md:flex-row">
+          <div
+            class="m-4 mx-auto flex max-w-sm flex-col rounded-2xl border-t-2 border-t-blackP px-4 pb-4 pt-2 text-center font-sans text-2xl font-semibold uppercase text-black text-opacity-60 sm:text-3xl md:hidden"
+          >
+            <p class="">Os melhores desafios estão aqui!</p>
+          </div>
+          <div
+            class="mb-32 mt-24 hidden max-w-sm rounded-br-2xl rounded-tl-2xl border-2 border-b-grayL border-l-cyan-300 border-r-grayL border-t-cyan-300 p-4 font-sans text-4xl uppercase text-black text-opacity-60 md:mx-0 md:mb-48 md:mt-20 md:block md:p-10 md:text-6xl"
+          >
+            Hora de Ganhar!
+          </div>
+          <div class="top-40 z-20 md:absolute md:right-0">
+            <img src="images/player2.png" width="650px" alt="" class="" />
+          </div>
+          <!-- blur -->
+          <div
+            id="blured"
+            class="absolute top-[520px] z-10 md:right-[345px] md:top-[655px]"
+          >
+            <div class="h-8 w-96 rounded-3xl bg-blackP blur-2xl"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Features -->
+    <section id="features" class="">
+      <div
+        class="container mx-auto my-6 flex flex-col justify-center px-6 pb-6 pt-8 md:max-w-4xl lg:max-w-6xl"
+      >
+        <div class="z-30 mx-auto flex flex-col justify-center lg:mb-4 lg:mt-12">
+          <h1
+            class="max-w-lg py-5 text-center text-3xl font-semibold text-blackP md:text-5xl"
+          >
+            As melhores competições de E-sports
+          </h1>
+          <p
+            class="mx-auto max-w-md text-center font-sans text-lg text-grayP lg:mx-0 lg:mt-0 lg:text-2xl"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem
+            pariatur nihil tempore? Natus laborum dicta ipsum eaque magnam
+            exercitationem.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Tab Content -->
+    <section id="content">
+      <div
+        class="relative mx-auto flex flex-col px-6 md:max-w-4xl lg:mb-10 lg:mt-5 lg:max-w-6xl"
+      >
+        <!-- Tab Latests -->
+        <div
+          class="mx-auto flex cursor-pointer flex-col items-center space-x-0 space-y-5 py-6 font-alata text-blackP sm:flex-row sm:space-x-4 sm:space-y-0 md:space-x-8 lg:space-x-10"
+        >
+          <!-- tab 1 -->
+          <div
+            class="tab rounded-full border-x-2 border-t-4 border-cyanP bg-cyanP px-10 py-2 text-center transition duration-150 hover:-translate-y-1 hover:bg-opacity-80 hover:shadow-sm hover:shadow-blackP"
+            data-target="panel-1"
+          >
+            CS
+          </div>
+          <!-- tab 2 -->
+          <div
+            class="tab rounded-full border-x-2 border-t-4 border-cyanP bg-cyanP px-10 py-2 text-center transition duration-150 hover:-translate-y-1 hover:bg-opacity-80 hover:shadow-sm hover:shadow-blackP"
+            data-target="panel-2"
+          >
+            DOTA
+          </div>
+          <!-- tab 3 -->
+          <div
+            class="tab rounded-full border-x-2 border-t-4 border-cyanP bg-cyanP px-10 py-2 text-center transition duration-150 hover:-translate-y-1 hover:bg-opacity-80 hover:shadow-sm hover:shadow-blackP"
+            data-target="panel-3"
+          >
+            LOL
+          </div>
+          <!-- tab 4 -->
+          <div
+            class="tab rounded-full border-x-2 border-t-4 border-cyanP bg-cyanP px-10 py-2 text-center transition duration-150 hover:-translate-y-1 hover:bg-opacity-80 hover:shadow-sm hover:shadow-blackP"
+            data-target="panel-4"
+          >
+            WARZONE
+          </div>
+        </div>
+        <!-- blur -->
+        <div
+          id="blured"
+          class="absolute top-24 z-10 hidden animate-pulse md:left-72 md:block lg:left-80"
+        >
+          <div class="h-8 w-96 rounded-3xl bg-blackP blur-2xl"></div>
+        </div>
+        <!-- Tab Latests Panels -->
+        <div id="panels" class="z-0 mx-auto">
+          <!-- Panel 1 -->
+          <div
+            class="panel panel-1 mt-8 flex flex-col-reverse pb-5 md:flex-row md:space-x-6"
+          >
+            <!-- Panel Image -->
+            <div class="flex-none justify-center md:w-1/2">
+              <div class="group relative">
+                <img
+                  src="images/csgo.jpg"
+                  alt="CS-GO"
+                  class="h-72 rounded-3xl rounded-tl-none rounded-tr-none md:h-96 md:rounded-br-none md:rounded-tl-3xl md:rounded-tr-none"
+                />
+                <div
+                  class="absolute bottom-0 left-0 right-0 rounded-bl-3xl rounded-br-3xl bg-black bg-opacity-40 p-2 px-4 text-white opacity-0 duration-500 group-hover:opacity-100 md:rounded-br-none"
+                >
+                  <div class="flex w-full justify-between">
+                    <div class="font-normal">
+                      <p class="text-sm">Counter Strike GO</p>
+                      <p class="text-xs">245 likes - 35 shares</p>
+                    </div>
+                    <div class="flex items-center">
+                      <img src="images/bookmark.svg" alt="bookmark" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Panel Content -->
+            <div
+              class="flex flex-col space-y-4 rounded-t-3xl border-x-4 border-t-4 border-grayP border-opacity-20 p-4 md:w-1/2 md:border-0"
+            >
+              <h3
+                class="mt-4 text-center text-3xl font-bold text-blackP md:mt-0 md:text-left lg:text-5xl"
+              >
+                Counter Strike - Global Ofensive
+              </h3>
+              <div
+                class="max-w-md text-left font-sans text-lg text-grayP lg:text-2xl"
+              >
+                <p class="ml-4">
+                  Descrição de como são as competições de Counter Strike.
+                </p>
+                <p class="ml-4">Como são as equipes:</p>
+                <p class="ml-4">Tempo de jogo:</p>
+              </div>
+
+              <div class="mx-auto my-6 pb-6 md:mx-0">
+                <a
+                  href="#"
+                  class="mt-4 rounded-full border-2 border-blackP bg-white px-6 py-3 font-semibold text-blackP hover:border-0 hover:bg-grayP hover:text-white hover:shadow-md hover:shadow-blackP md:inline-flex"
+                  >Mais Informações</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Panel 2 -->
+          <div
+            class="panel panel-2 mt-4 flex hidden flex-col-reverse py-5 md:flex-row md:space-x-6"
+          >
+            <!-- Panel Image -->
+            <div class="flex-none justify-center md:w-1/2">
+              <div class="group relative">
+                <img
+                  src="images/dota2.jpg"
+                  alt="dota2"
+                  class="h-72 rounded-3xl rounded-tl-none rounded-tr-none md:h-96 md:rounded-br-none md:rounded-tl-3xl md:rounded-tr-none"
+                />
+                <div
+                  class="absolute bottom-0 left-0 right-0 rounded-bl-3xl rounded-br-3xl bg-black bg-opacity-40 p-2 px-4 text-white opacity-0 duration-500 group-hover:opacity-100 md:rounded-br-none"
+                >
+                  <div class="flex w-full justify-between">
+                    <div class="font-normal">
+                      <p class="text-sm">Dota 2</p>
+                      <p class="text-xs">245 likes - 35 shares</p>
+                    </div>
+                    <div class="flex items-center">
+                      <img src="images/bookmark.svg" alt="bookmark" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Panel Content -->
+            <div
+              class="flex flex-col space-y-4 rounded-t-3xl border-x-4 border-t-4 border-grayP border-opacity-20 p-4 md:w-1/2 md:border-0"
+            >
+              <h3
+                class="mt-4 text-center text-3xl font-bold text-blackP md:mt-0 md:text-left lg:text-5xl"
+              >
+                Dota 2
+              </h3>
+              <div
+                class="max-w-md text-left font-sans text-lg text-grayP lg:text-2xl"
+              >
+                <p class="ml-4">
+                  Descrição de como são as competições de Dota 2.
+                </p>
+                <p class="ml-4">Como são as equipes:</p>
+                <p class="ml-4">Tempo de jogo:</p>
+              </div>
+
+              <div class="mx-auto my-6 pb-6 md:mx-0">
+                <a
+                  href="#"
+                  class="mt-4 rounded-full border-2 border-blackP bg-white px-6 py-3 font-semibold text-blackP hover:border-0 hover:bg-grayP hover:text-white hover:shadow-md hover:shadow-blackP md:inline-flex"
+                  >Mais Informações</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Panel 3 -->
+          <div
+            class="panel panel-3 mt-4 flex hidden flex-col-reverse py-5 md:flex-row md:space-x-6"
+          >
+            <!-- Panel Image -->
+            <div class="flex-none justify-center md:w-1/2">
+              <div class="group relative">
+                <img
+                  src="images/lol.jpg"
+                  alt="lol"
+                  class="h-72 rounded-3xl rounded-tl-none rounded-tr-none md:h-96 md:rounded-br-none md:rounded-tl-3xl md:rounded-tr-none"
+                />
+                <div
+                  class="absolute bottom-0 left-0 right-0 rounded-bl-3xl rounded-br-3xl bg-black bg-opacity-40 p-2 px-4 text-white opacity-0 duration-500 group-hover:opacity-100 md:rounded-br-none"
+                >
+                  <div class="flex w-full justify-between">
+                    <div class="font-normal">
+                      <p class="text-sm">League of Legends</p>
+                      <p class="text-xs">245 likes - 35 shares</p>
+                    </div>
+                    <div class="flex items-center">
+                      <img src="images/bookmark.svg" alt="bookmark" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Panel Content -->
+            <div
+              class="flex flex-col space-y-4 rounded-t-3xl border-x-4 border-t-4 border-grayP border-opacity-20 p-4 md:w-1/2 md:border-0"
+            >
+              <h3
+                class="mt-4 text-center text-3xl font-bold text-blackP md:mt-0 md:text-left lg:text-5xl"
+              >
+                League of Legends
+              </h3>
+              <div
+                class="max-w-md text-left font-sans text-lg text-grayP lg:text-2xl"
+              >
+                <p class="ml-4">Descrição de como são as competições de LOL.</p>
+                <p class="ml-4">Como são as equipes:</p>
+                <p class="ml-4">Tempo de jogo:</p>
+              </div>
+
+              <div class="mx-auto my-6 pb-6 md:mx-0">
+                <a
+                  href="#"
+                  class="mt-4 rounded-full border-2 border-blackP bg-white px-6 py-3 font-semibold text-blackP hover:border-0 hover:bg-grayP hover:text-white hover:shadow-md hover:shadow-blackP md:inline-flex"
+                  >Mais Informações</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Panel 4 -->
+          <div
+            class="panel panel-4 mt-4 flex hidden flex-col-reverse py-5 md:flex-row md:space-x-6"
+          >
+            <!-- Panel Image -->
+            <div class="flex-none justify-center md:w-1/2">
+              <div class="group relative">
+                <img
+                  src="images/warzone.jpg"
+                  alt="warzone"
+                  class="h-72 rounded-3xl rounded-tl-none rounded-tr-none md:h-96 md:rounded-br-none md:rounded-tl-3xl md:rounded-tr-none"
+                />
+                <div
+                  class="absolute bottom-0 left-0 right-0 rounded-bl-3xl rounded-br-3xl bg-black bg-opacity-40 p-2 px-4 text-white opacity-0 duration-500 group-hover:opacity-100 md:rounded-br-none"
+                >
+                  <div class="flex w-full justify-between">
+                    <div class="font-normal">
+                      <p class="text-sm">Call of Duty - Warzone</p>
+                      <p class="text-xs">245 likes - 35 shares</p>
+                    </div>
+                    <div class="flex items-center">
+                      <img src="images/bookmark.svg" alt="bookmark" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Panel Content -->
+            <div
+              class="flex flex-col space-y-4 rounded-t-3xl border-x-4 border-t-4 border-grayP border-opacity-20 p-4 md:w-1/2 md:border-0"
+            >
+              <h3
+                class="mt-4 text-center text-3xl font-bold text-blackP md:mt-0 md:text-left lg:text-5xl"
+              >
+                Call of Duty - Warzone
+              </h3>
+              <div
+                class="max-w-md text-left font-sans text-lg text-grayP lg:text-2xl"
+              >
+                <p class="ml-4">
+                  Descrição de como são as competições de Warzone.
+                </p>
+                <p class="ml-4">Como são as equipes:</p>
+                <p class="ml-4">Tempo de jogo:</p>
+              </div>
+
+              <div class="mx-auto my-6 pb-6 md:mx-0">
+                <a
+                  href="#"
+                  class="mt-4 rounded-full border-2 border-blackP bg-white px-6 py-3 font-semibold text-blackP hover:border-0 hover:bg-grayP hover:text-white hover:shadow-md hover:shadow-blackP md:inline-flex"
+                  >Mais Informações</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          id="blured"
+          class="absolute bottom-0 left-10 z-10 block animate-pulse md:hidden"
+        >
+          <div class="h-8 w-96 rounded-3xl bg-blackP blur-2xl"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Tab All Competitions -->
+    <section id="allComp">
+      <!-- All Competitions Container  -->
+      <div class="container mx-auto my-24 max-w-6xl px-6 text-blackP">
+        <!-- Header -->
+        <div class="mb-14 flex justify-center md:justify-between">
+          <h2
+            class="text-center text-3xl font-semibold uppercase md:text-left md:text-5xl"
+          >
+            Competições
+          </h2>
+
+          <div
+            class="group my-0 hidden items-center px-10 py-2 font-alata font-semibold tracking-widest md:flex"
+          >
+            <h3 class="pr-3">Veja Mais</h3>
+            <img
+              src="images/icons/icon-plus.svg"
+              class="h-6 w-6 duration-300 group-hover:rotate-90"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <!-- Item Container Grid -->
+        <div
+          class="my-14 grid grid-cols-1 gap-10 py-6 text-2xl uppercase text-white md:grid-cols-3 md:gap-6 lg:grid-cols-4"
+        >
+          <!-- Item 1 -->
+          <div class="item group z-10">
+            <a href="#">
+              <!-- Tag Open -->
+              <div class="tag-open bg-green-500 group-hover:w-24">
+                <p class="tag-open-p group-hover:block">Aberto</p>
+              </div>
+              <!-- Tag Closed
+              <div class="tag-open bg-red-500 group-hover:w-28">
+                <p class="tag-open-p group-hover:block">Fechado</p>
+              </div> -->
+
+              <!-- Desktop Image -->
+              <img
+                src="images/csgov.jpg"
+                alt=""
+                class="hidden h-full w-full duration-200 group-hover:scale-110 md:block"
+              />
+              <!-- Mobile Image -->
+              <img src="images/csgo.jpg" alt="" class="w-full md:hidden" />
+              <div class="item-gradient"></div>
+
+              <h5 class="h5">Counter-Strike GO</h5>
+            </a>
+          </div>
+          <!-- Item 2 -->
+          <div class="item group">
+            <a href="#">
+              <!-- Tag Open
+              <div class="tag-open bg-green-500 group-hover:w-24">
+                <p class="tag-open-p group-hover:block">Aberto</p>
+              </div> -->
+              <!-- Tag Closed -->
+              <div class="tag-open bg-red-500 group-hover:w-28">
+                <p class="tag-open-p group-hover:block">Fechado</p>
+              </div>
+              <!-- Desktop Image -->
+              <img
+                src="images/dota2v.jpg"
+                alt=""
+                class="hidden h-full w-full duration-200 group-hover:scale-110 md:block"
+              />
+              <!-- Mobile Image -->
+              <img src="images/dota2.jpg" alt="" class="w-full md:hidden" />
+              <div class="item-gradient"></div>
+              <h5 class="h5">Dota 2</h5>
+            </a>
+          </div>
+          <!-- Item 3 -->
+          <div class="item group">
+            <a href="#">
+              <!-- Tag Open
+              <div class="tag-open bg-green-500 group-hover:w-24">
+                <p class="tag-open-p group-hover:block">Aberto</p>
+              </div> -->
+              <!-- Tag Closed -->
+              <div class="tag-open bg-red-500 group-hover:w-28">
+                <p class="tag-open-p group-hover:block">Fechado</p>
+              </div>
+              <!-- Desktop Image -->
+              <img
+                src="images/lolv.jpg"
+                alt=""
+                class="hidden h-full w-full duration-200 group-hover:scale-110 md:block"
+              />
+              <!-- Mobile Image -->
+              <img src="images/lol.jpg" alt="" class="w-full md:hidden" />
+              <div class="item-gradient"></div>
+              <h5 class="h5">League of Legends</h5>
+            </a>
+          </div>
+          <!-- Item 4 -->
+          <div class="item group">
+            <a href="#">
+              <!-- Tag Open -->
+              <div class="tag-open bg-green-500 group-hover:w-24">
+                <p class="tag-open-p group-hover:block">Aberto</p>
+              </div>
+              <!-- Tag Closed
+              <div class="tag-open bg-red-500 group-hover:w-28">
+                <p class="tag-open-p group-hover:block">Fechado</p>
+              </div> -->
+              <!-- Desktop Image -->
+              <img
+                src="images/warzonev.jpg"
+                alt=""
+                class="hidden h-full w-full duration-200 group-hover:scale-110 md:block md:h-96"
+              />
+              <!-- Mobile Image -->
+              <img src="images/warzone.jpg" alt="" class="w-full md:hidden" />
+              <div class="item-gradient"></div>
+              <h5 class="h5">Call of Duty - Warzone</h5>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer id="footer" class="bg-blackP text-white">
+      <div class="container mx-auto max-w-7xl px-6 pb-6 pt-10">
+        <!-- Flex Container for all items -->
+        <div
+          class="my-4 flex flex-col items-center justify-between md:flex-row md:space-y-0"
+        >
+          <!-- Logo  -->
+          <div class="my-8 mr-4 flex justify-center md:justify-start">
+            <img src="images/logo1.png" class="h-20" alt="" />
+          </div>
+          <!-- Menu -->
+          <div class="flex flex-col font-alata">
+            <div
+              class="flex flex-col space-y-4 py-10 text-center text-base tracking-widest md:flex-row md:space-x-4 md:space-y-0 md:text-lg"
+            >
+              <div class="group">
+                <a href="#" class="hover:text-cyanP">Competições</a>
+                <div
+                  class="mx-2 group-hover:border-b-2 group-hover:border-grayL"
+                ></div>
+              </div>
+              <div class="group">
+                <a href="#" class="hover:text-cyanP">Contato</a>
+                <div
+                  class="mx-2 group-hover:border-b-2 group-hover:border-grayL"
+                ></div>
+              </div>
+              <div class="group">
+                <a href="#" class="hover:text-cyanP"
+                  >Políticas de Privacidade</a
+                >
+                <div
+                  class="mx-2 group-hover:border-b-2 group-hover:border-grayL"
+                ></div>
+              </div>
+            </div>
+            <!-- Inc -->
+            <div class="mt-4 pt-4 text-center text-sm font-bold">
+              &copy; 2023 Evvent. Todos os Direitos Reservados.
+            </div>
+          </div>
+          <!-- Social -->
+          <div
+            class="flex items-center justify-center space-x-4 py-8 md:justify-end"
+          >
+            <div class="">
+              <a href="#">
+                <img
+                  src="images/icons/icon-facebook.svg"
+                  class="ficon rounded-2xl bg-blackP p-2 duration-300 hover:-translate-y-0.5"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="">
+              <a href="#">
+                <img
+                  src="images/icons/icon-instagram.svg"
+                  class="ficon rounded-2xl bg-blackP p-2"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="">
+              <a href="#">
+                <img
+                  src="images/icons/icon-twitter.svg"
+                  class="ficon rounded-2xl bg-blackP p-2"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="flowbite/dist/flowbite.min.js"></script>
+  </body>
+</html>
