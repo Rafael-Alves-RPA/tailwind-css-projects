@@ -10,13 +10,13 @@ module.exports = {
         blackP: "#25353d",
         grayL: "#d0e3e1",
       },
-      backgroundImage: (theme) => ({
-        "back-1": "url('../images/player.png')",
-        "logo-1": "url('../images/logo1.png')",
-      }),
       fontFamily: {
         sans: ["Josefin Sans", "sans-serif"],
         alata: ["Alata"],
+      },
+      backgroundImage: {
+        "logo-light": "url('../images/logo.png')",
+        "logo-dark": "url('../images/logo1.png')",
       },
     },
     plugins: [require("flowbite/plugin.js")],

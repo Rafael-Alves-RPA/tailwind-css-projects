@@ -24,7 +24,7 @@
 }
 
 .item {
-  @apply relative overflow-hidden shadow-xl shadow-grayL;
+  @apply relative overflow-hidden shadow-xl shadow-grayL dark:shadow-md dark:shadow-zinc-800;
 }
 
 .item-gradient {
